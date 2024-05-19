@@ -75,10 +75,47 @@ while pylinux:
         print("doc - print the PyLinux documentation")
         print("license - prints the license")
         print("map - show filesystem structure")
+        print("echo - prints what you type after pressing enter, can show a file path if you type a filename")
         print("exit - close PyLinux")
 
         #The help message
 
+    if a == "echo":
+
+        cls()
+
+        a = input("> ")
+
+        cls()
+
+        if a == "features.txt":
+
+            print("/extra-stuff")
+
+        if a == "PyLinuxPlus.txt":
+
+            print("/user-files")
+
+        if a == "pylinux.py":
+
+            print("/user-files")
+
+        if a == "version.txt":
+
+            print("/about")
+
+        if a == "credits.txt":
+
+            print("/about")
+
+        if a == "license.txt":
+
+            print("/about")
+
+        else:
+
+            print(a)
+    
     if a == "whoami":
 
         print("Name: " + name)
@@ -284,7 +321,10 @@ while pylinux:
         print("/about")
         print("   -> version.txt")
         print("   -> credits.txt")
-        print("   -> license.txt")
+        print("   -> license.txt\n")
+
+        print("/extra-stuff")
+        print("      -> features.txt")
 
     if a == "doc":
 
@@ -326,5 +366,6 @@ while pylinux:
         print("to read it add its cat command on line 146, including the if ls == directory statement. To change the OS name change it on lines 164, 170, 189, 199, 13, 35, 43, 47, 66, 69, 71, 146,")
         print("150, 151, 164, 170, 182, 184, 189, 190, 199, and 235.")
         print("To add a new command add it to the help text on line 55, and add it to line 73.")
+        print("If you create a new file you have to add it's file location to the echo command on line 91.\n")
 
         #Fixed a commit message
