@@ -326,3 +326,5 @@ while pylinux:
         print("to read it add its cat command on line 146, including the if ls == directory statement. To change the OS name change it on lines 164, 170, 189, 199, 13, 35, 43, 47, 66, 69, 71, 146,")
         print("150, 151, 164, 170, 182, 184, 189, 190, 199, and 235.")
         print("To add a new command add it to the help text on line 55, and add it to line 73.")
+
+        #Fixed a commit message
