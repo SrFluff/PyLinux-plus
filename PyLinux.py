@@ -87,6 +87,8 @@ while pylinux:
 
     if a == "exit":
 
+        cls()
+
         quit()
     
     if a == "clear":
